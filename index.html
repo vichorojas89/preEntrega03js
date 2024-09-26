@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatiza</title>
+<!--Link Boostrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!--Link CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <header class="header"> 
+        <div class="container row"> 
+            <div class="col"><h1>Tienda Zapatiza</h1></div>
+                <div class="logo col">
+                    <img class="logoZapatiza" src="./img/logoZapatiza.jpg" alt="logo">
+                </div>
+            
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="container">
+            <h2 class="titulo">Productos</h2>
+            <div class="productos " id="productos">
+            <!-- Traer productos desde JavaScript-->
+             <!--
+
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Air Force 1 07 Zapatilla Urbana Hombre Negro Nike.avif" alt="">
+                    <h3>Nike - Air Force 1 Negro</h3>
+                    <p>$60000</p>
+                    <button class="producto-btn">Agregar al carrito</button>
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Break Start Zapatilla Urbana Hombre Negro Adidas.avif" alt="">
+                    <h3>Adidas - Break Start</h3>
+                    <p>$45000</p>
+                    <button class="producto-btn">Agregar al carrito</button>
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Forum Low Zapatilla Urbana Hombre Blanco Adidas Originals.avif" alt="">
+                    <h3>Adidas - Forum Low</h3>
+                    <p>$70000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Full Force Lo Cob Zapatilla Urbana Hombre Cuero Blanco Nike .avif" alt="">
+                    <h3>Nike - Full Force Lo Cob</h3>
+                    <p>$65000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+
+
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Full Force Lo Zapatilla Urbana Hombre Blanco Nike.avif" alt="">
+                    <h3>Nike - Full Force Lo</h3>
+                    <p>$93000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Midcity Mid Zapatilla Urbana Hombre Blanco Adidas.avif" alt="">
+                    <h3>Adidas - Midcity Mid</h3>
+                    <p>$55000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Rebound V6 Low Zapatilla Urbana Hombre Blanco Puma.avif" alt="">
+                    <h3>Puma - Rebound V6 Low</h3>
+                    <p>$80000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Tech Hera Zapatilla Urbana Hombre Blanco Nike.avif" alt="">
+                    <h3>Nike - Tech Hera Blanco</h3>
+                    <p>$90000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Tech Hera Zapatilla Urbana Hombre Nike.avif" alt="">
+                    <h3>Nike - Tech Hera</h3>
+                    <p>$88000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+                <div class="producto col-3">
+                    <img class="producto-img" src="./img/Zapatilla Urbana Hombre Café Skechers.avif" alt="">
+                    <h3>Skechers - Urbana</h3>
+                    <p>$33000</p>
+                    <button class="producto-btn">Agregar al carrito</button>    
+                </div>
+                -->
+            </div>
+
+        </section>
+        <section class="container">
+            <h2 class="titulo">Carrito</h2>
+            <div id="carrito-vacio" class="carrolo">
+                <h4>Tu carrito esta vacio</h4>
+            </div>
+            <div class="totalApagar"></div>
+
+            <div class="carrito-productos d-none" id="carrito-productos">
+                <div class="carrito-producto">
+                    <h3>Nike - Air Force 1 Negro</h3>
+                    <p>$60000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Adidas - Break Start</h3>
+                    <p>$45000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Adidas - Forum Low</h3>
+                    <p>$70000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Nike - Full Force Lo Cob</h3>
+                    <p>$65000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Nike - Full Force Lo</h3>
+                    <p>$93000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Adidas - Midcity Mid</h3>
+                    <p>$55000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>            
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Puma - Rebound V6 Low</h3>
+                    <p>$80000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Nike - Tech Hera Blanco</h3>
+                    <p>$90000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Nike - Tech Hera</h3>
+                    <p>$88000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <div class="carrito-producto">
+                    <h3>Skechers - Urbana</h3>
+                    <p>$33000</p>
+                    <button class="carrito-producto-btn">❌</button>
+                </div>
+            </div>
+
+            <div class="carri-total">
+                <h2>FINALITy: <span id="carrito-total">$0</span></h2>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p> Zapatiza ©</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>
