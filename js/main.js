@@ -57,7 +57,7 @@ const productos =[
         id: "zapatilla-10",
         titulo: "Skechers - Urbana",
         precio: 33000,
-        img: "/img/zapatilla-10.avif",
+        img: "./img/zapatilla-10.avif",
     }
 ];
 
