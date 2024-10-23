@@ -7,7 +7,7 @@ const productos =[
     },
     {
         id: "zapatilla-02",
-        titulo: "Adidas - Break Start<",
+        titulo: "Adidas - Break Start",
         precio: 45000,
         img: "./img/zapatilla-02.avif",
     },
@@ -103,7 +103,7 @@ function mostrarCarrito(){
         acumulador += "<td>"+producto.cantidad+ "</td>";
         acumulador += "<td>"+(producto.precio*producto.cantidad)+ "</td>";
         acumulador += `<td><button type="button" class="btn btn-warning" onclick="eliminarDelCarrito(`+"`"+producto.id +"`"+`)" >Quitar producto</button></td><tr>`;
-        total += (producto.precio*producto.cantidad);
+        total += (producto.precio*producto.cantidad) ;
     });
     acumulador += "</table>";
     $(".carrolo").html(acumulador);
@@ -124,12 +124,6 @@ function eliminarDelCarrito(idProducto) {
     }
     mostrarCarrito();
 }
-
-
-
-
-
-
 
 
 
@@ -156,4 +150,15 @@ productos.forEach((producto)=>{
     div.append(button);
     contenedorProductos.append(div);
 
-})
+})  
+
+Swal.fire({
+    title: '¡Bienvenido a Zapatiza!',
+    text: 'Tu tienda de zapatillas',
+    imageUrl: './img/logoZapatiza2.jpeg', 
+    imageWidth: 300, 
+    imageHeight: 300,
+    imageAlt: '',
+    confirmButtonText: 'Ir a la tienda ✌️'
+  });
+  

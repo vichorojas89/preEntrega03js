@@ -133,3 +133,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--clr-white);
     padding-block: 2rem;
 }
+
+.swal2-popup {
+    background-color:rgb(254, 207, 0);
+    
+}
